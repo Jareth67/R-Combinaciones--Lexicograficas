@@ -1,33 +1,44 @@
-# ========================================
-# IGNORA ARCHIVOS DE COMPILACIÓN C++
-# ========================================
-*.exe
-*.out
+# Archivos de compilación
 *.o
 *.obj
+*.exe
+*.out
 *.a
 *.so
 
-# ========================================
-# IGNORA ARCHIVOS TEMPORALES / GENERADOS
-# ========================================
+# Archivos de depuración
 *.log
+*.dSYM/
+*.stackdump
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Archivos de C++
+*.gch
+*.pch
+
+# Archivos temporales y de respaldo
+*~
+*.swp
 *.tmp
 
-# Ignorar todos los archivos CSV...
-*.csv
+# Directorios comunes de compilación
+/build/
+/bin/
+/debug/
+/release/
 
-# ...excepto el ejemplo de referencia:
-!resultados/ejemplo.csv
+# Archivos generados automáticamente (excepto CSV y PNG)
+Resultados*/ 
+Grafica*/
 
-# ========================================
-# IGNORA ARCHIVOS DE CONFIGURACIÓN DE IDEs
-# ========================================
+# Configuración de IDEs (opcional)
 .vscode/
 .idea/
-*.user
+*.code-workspace
 
-# ========================================
 # IGNORA ARCHIVOS DEL SISTEMA
 # ========================================
 .DS_Store
