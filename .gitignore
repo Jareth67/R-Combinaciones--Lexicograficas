@@ -1,0 +1,34 @@
+# ========================================
+# IGNORA ARCHIVOS DE COMPILACIÓN C++
+# ========================================
+*.exe
+*.out
+*.o
+*.obj
+*.a
+*.so
+
+# ========================================
+# IGNORA ARCHIVOS TEMPORALES / GENERADOS
+# ========================================
+*.log
+*.tmp
+
+# Ignorar todos los archivos CSV...
+*.csv
+
+# ...excepto el ejemplo de referencia:
+!resultados/ejemplo.csv
+
+# ========================================
+# IGNORA ARCHIVOS DE CONFIGURACIÓN DE IDEs
+# ========================================
+.vscode/
+.idea/
+*.user
+
+# ========================================
+# IGNORA ARCHIVOS DEL SISTEMA
+# ========================================
+.DS_Store
+Thumbs.db
